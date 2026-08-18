@@ -5,12 +5,21 @@ body{
 }
 header{
   img{
-    display:block;
-    margin-top: 70px;
-    margin-left:auto;
-    margin-right:auto;
-    width: 30%;
+    display:inline-block;
+    margin-left:30px;
+    width: 10%;
+    vertical-align: top;
   }
+}
+#Skip_Button{
+  display:inline-block;
+  background-color:rgb(76, 242, 98);
+  margin-top:20px;
+  margin-left:50px;
+  margin-bottom:20px;
+  height: 50px;
+  width: 300px;
+  text-align:center;
 }
 footer{
   p{
@@ -23,10 +32,12 @@ footer{
   }
 }
 nav{
-  display:block;
+  display:inline-block;
+  vertical-align: top;
   text-align:center;
-  background-color:rgb(48, 183, 66);
-  height: 80px;
+  background-color:rgb(122, 211, 143);
+  width: 80%;
+  height:60px;
 }
 nav ul {
   display: flex;
@@ -36,22 +47,24 @@ nav ul {
   padding: 0;
   list-style: none;
 }
-li {
+/* li {
   display:inline-block;
   width: 30%;
-  height: 80px;
+  height: 60px;
   text-align:center;
-  font-size: 24px;
+  font-size: 75%;
   font-weight: bold;
-  line-height: 80px;
+  line-height: 25px;
   background-color:rgb(122, 211, 143);
-}
+  a {
+    text-decoration:none;
+  } */
 
 h1{
   display:block;
   text-align:center;
   text-decoration:underline;
-  line-height: 100px;
+  line-height: 80px;
   font-size: 48px;
   color:rgb(39, 99, 53);
 }
@@ -60,7 +73,7 @@ main{
   display:block;
   background-color:rgb(254, 226, 142);
   line-height: 30px;
-  height: 120px;
+  min-height: 120px;
   width: 90%;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -75,5 +88,21 @@ main{
     margin-left: 50px;
     margin-right: 50px;
   }
+}
+.Neighbor_pics{
+  display:grid;
+  grid-template-columns: 40% 40%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  img{
+    width: 100%;
+  }
+}
+.Park_pics{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
